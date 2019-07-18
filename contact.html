@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>contact</title>
+<link rel="stylesheet"href="css/Contact.css"/>
+</head>
+<body>
+<div id="main_page">
+<div id="header"><center><b>ONLINE HOSTEL BOOKING SERVICE</b></CENTER>
+</div>
+<div id="logo"><img src="image/1.png" alt=""height="120x"width="250px"/></div>
+<div id="inline">
+<ul style="margin-top:-60px">
+<li><a style="text-decoration: none;"href="pbl.html">Home</a></li>
+<li><a style="text-decoration: none;"href="about.html">About Us</a></li>
+<li><a style="text-decoration: none;"href="gallery.html">Gallery</a></li>
+
+<div class="dropdown">
+<li onclick="myFunction()" class="dropbtn">Hostel blocks</li>
+  <div id="myDropdown" class="dropdown-content">
+   <onkeyup="filterFunction()">
+    <a href="drop.html">Maurya</a>
+    <a href="nri.html">Kushan</a>
+    <a href="chola.html">Chola</a>
+    <a href="kalinga.html">Kalinga</a>
+    <a href="kakitya.html">Kakatiya</a>
+    <a href="magadha.html">Magadha</a>
+    <a href="chalukya.html">Chalukya</a>
+	 <a href="vijaynagra.html">Vijaynagra</a>
+  </div>
+</div>
+
+
+<li><a style="text-decoration: none;"href="contact.html">Contacts us</a></li>
+
+</ul>
+</div>
+<div id="container">
+<img src="image/23.jpg"width="100%"height="300px"/>
+<div id="middle">Contact Us</div>
+</div>
+<h2 style="margin-left:30px;">Address:</h2><br>
+<p style="margin-left:30px;margin-top:-30px"><b>Nagarjuna College of Engineering and Technology</b><br>
+Mudugurki, Venkatagiri Kote Post,<br>
+Devanhalli, Bangalore- 562 164</p>
+<h2 style="margin-left:30px;">Phone No:</h2><br>
+<p style="margin-left:30px;margin-top:-30px">080 - 67462700 / 701 / 702</p>
+<h2 style="margin-left:240px;margin-top:-70px">Fax:</h2><br>
+<p style="margin-left:240px;margin-top:-30px"> 080 - 6746 2799</p>
+<h2 style="margin-left:30px;">Email Id:</h2><br>
+<p style="margin-left:30px;margin-top:-30px">info@ncetmail.com</br>
+<h2 style="margin-left:30px;">For Admissions:</h2><br>
+<p style="margin-left:30px;margin-top:-30px">Mr. S N Raju - 09164 895 666 - | Mr. Vinay Reddy - 09164 591 444</br>
+<h2 style="margin-left:30px;">Campus Administrator(ph no.) :</h2><br>
+<p style="margin-left:30px;margin-top:-30px">1234567890<br>
+<div id="googlemap"
+<h1>Google Map</h1>
+
+<div id="map" style="width:400px;height:400px;background:white"></div>
+
+<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(13.3417271,77.7242516), zoom: 10
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+</div>
+
+<div id="footer">
+<div id="office">
+<div id="frame">
+<h2 style="margin-left:30px;color:orange;"><b>Corporate Office</b></h2><br>
+ <p style="color:black;">Nagarjuna Group Of Institutions,<br>
+ <br>
+  80 Feet Road, Yalahanka New Town, Bengaluru-560 064<br><br>
+Phone no:-080 - 65653232 | 65363232<br><br>
+Mail:-info@ncetmail.com</p>
+<div id="part">
+<h2 style="margin-left:30px;color:orange;"><b>Engineering College</b></h2><br>
+<p style="color:black;"> Nagarjuna College Of Engineering & Technology<br>
+ <br>
+  Mudugurki, Venkatagiri Kote Post, Devanhalli, Bangalore- 562 <br><br>
+Phone no:-080 6746 2700,701, 702<br><br>
+Mail:-info@ncetmail.com</p>
+</div>
+</div>
+
+</div>
+
+</div>
+<div id="address">
+All materials, content and forms contained on this website are the intellectual property of<br> Nagarjuna Group Of Institutions.
+<div id="twitter">
+<a itemprop="url" href="https://twitter.com/principal_ncet" target="_blank" title=""><i class="fa fa-twitter"></i>
+<img src="image/17.png"height="70px"width="130px"></a>
+<a itemprop="url" href="https://www.facebook.com/Nagarjunacollege.Bangalore/" target="_blank" title=""><i class="fa fa-facebook"></i>
+<img src="image/30.png"height="55px"width="55px"></a>
+</div>
+</div>
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDropdown");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+        } else {
+            a[i].style.display = "none";
+        }
+    }
+}
+
+</script>
+</body>
+</html>

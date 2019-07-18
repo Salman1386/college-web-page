@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>girls hostel</title>
+<link rel="stylesheet"href="css/boys.css"/>
+</head>
+<body>
+<div id="main_page">
+<div id="header"><center><b>ONLINE HOSTEL BOOKING SERVICE</b></CENTER>
+</div>
+<div id="logo"><img src="image/1.png" alt=""height="120x"width="250px"/></div>
+<div id="inline">
+<ul style="margin-top:-60px">
+<li><a style="text-decoration: none;"href="pbl.html">Home</a></li>
+<li><a style="text-decoration: none;"href="about.html">About Us</a></li>
+<li><a style="text-decoration: none;"href="gallery.html">Gallery</a></li>
+
+<div class="dropdown">
+<li onclick="myFunction()" class="dropbtn">Hostel blocks</li>
+  <div id="myDropdown" class="dropdown-content">
+   <onkeyup="filterFunction()">
+    <a href="drop.html">Maurya</a>
+    <a href="nri.html">Kushan</a>
+    <a href="chola.html">Chola</a>
+    <a href="kalinga.html">Kalinga</a>
+    <a href="kakitya.html">Kakatiya</a>
+    <a href="magadha.html">Magadha</a>
+    <a href="chalukya.html">Chalukya</a>
+	 <a href="vijaynagra.html">Vijaynagra</a>
+  </div>
+</div>
+
+
+<li><a style="text-decoration: none;"href="contact.html">Contacts us</a></li>
+
+</ul>
+</div>
+<center>
+  <div class="container">
+  <form style="width:50%"action="girls.php" method="POST">
+    <label for="fname">Students Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.."required>
+
+
+	 <label for="lname">Father Name</label>
+    <input type="text" id="fname" name="fathersname" placeholder="Your father name.."required>
+
+	<label for="lname">Father's occupation</label>
+    <input type="text" id="fname" name="fatheroccupation" placeholder="Your father's occupation.."required>
+
+	 <label for="lname">Mobile NO.</label>
+    <input type="text" id="fname" name="Mobile" placeholder="Your mobile number.."required>
+
+	 <label for="lname">Email Id</label>
+    <input type="text" id="fname" name="Email" placeholder="Your email id.."required>
+
+	<label for="lname">Branch</label>
+    <input type="text" id="fname" name="branch" placeholder="Your branch.."required>
+
+	<label for="lname">Permanent address</label>
+    <input type="text" id="fname" name="peraddress" placeholder="Your permanent address.."required>
+
+	<label for="lname">Current address</label>
+    <input type="text" id="fname" name="address" placeholder="Your temporary address.."required>
+
+	 <label for="country">Country</label>
+    <select id="Country" name="Country">
+	<option value="india">India</option>
+	<option value="Nepal">Nepal</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+
+    <label for="Hostel_blocks">Hostel blocks</label>
+    <select id="hostel" name="blockname">
+	<option value="Ganga">Ganga</option>
+	<option value="Kaveri">Kaveri</option>
+
+    </select>
+	<input type="radio"name="block"value="3AB"checked>3AB
+	<br>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</center>
+<div id="footer">
+<div id="office">
+<div id="frame">
+<h2 style="margin-left:30px;color:orange;"><b>Corporate Office</b></h2><br>
+ <p style="color:black;">Nagarjuna Group Of Institutions,<br>
+ <br>
+  80 Feet Road, Yalahanka New Town, Bengaluru-560 064<br><br>
+Phone no:-080 - 65653232 | 65363232<br><br>
+Mail:-info@ncetmail.com</p>
+<div id="part">
+<h2 style="margin-left:30px;color:orange;"><b>Engineering College</b></h2><br>
+<p style="color:black;"> Nagarjuna College Of Engineering & Technology<br>
+ <br>
+  Mudugurki, Venkatagiri Kote Post, Devanhalli, Bangalore- 562 <br><br>
+Phone no:-080 6746 2700,701, 702<br><br>
+Mail:-info@ncetmail.com</p>
+</div>
+</div>
+
+</div>
+
+</div>
+<div id="address">
+All materials, content and forms contained on this website are the intellectual property of<br> Nagarjuna Group Of Institutions.
+<div id="twitter">
+<a itemprop="url" href="https://twitter.com/principal_ncet" target="_blank" title=""><i class="fa fa-twitter"></i>
+<img src="image/17.png"height="70px"width="130px"></a>
+<a itemprop="url" href="https://www.facebook.com/Nagarjunacollege.Bangalore/" target="_blank" title=""><i class="fa fa-facebook"></i>
+<img src="image/30.png"height="55px"width="55px"></a>
+</div>
+</div>
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDropdown");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+        } else {
+            a[i].style.display = "none";
+        }
+    }
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ncet hostel</title>
+<link rel="stylesheet"href="css/style.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div id="page">
+<div id="header"><center><b>ONLINE HOSTEL BOOKING SERVICE</b></CENTER>
+</div>
+<div id="logo"><img src="image/1.png" alt=""height="120x"width="250px"/></div>
+<div id="inline">
+<ul style="margin-top:-60px">
+<li><a style="text-decoration: none;"href="pbl.html">Home</a></li>
+<li><a style="text-decoration: none;"href="about.html">About Us</a></li>
+<li><a style="text-decoration: none;"href="gallery.html">Gallery</a></li>
+
+
+<div class="dropdown">
+<li onclick="myFunction()" class="dropbtn">Hostel blocks</li>
+  <div id="myDropdown" class="dropdown-content">
+   <onkeyup="filterFunction()">
+    <a href="drop.html">Maurya</a>
+    <a href="nri.html">Kushan</a>
+    <a href="chola.html">Chola</a>
+    <a href="kalinga.html">Kalinga</a>
+    <a href="kakitya.html">Kakatiya</a>
+    <a href="magadha.html">Magadha</a>
+    <a href="chalukya.html">Chalukya</a>
+	 <a href="vijaynagra.html">Vijaynagra</a>
+  </div>
+</div>
+
+
+
+<li><a style="text-decoration: none;"href="contact.html">Contacts us</a></li>
+
+</ul>
+</div>
+
+<div class="slideshow-container">
+<div class="mySlides fade">
+    <div class="numbertext">1/ 8</div>
+    <img src="image/1234567.jpg"height="500px" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 8</div>
+    <img src="image/aa.jpg"height="500px" style="width:100%">
+  </div>
+
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 8</div>
+    <img src="image/cc.jpg"height="500px" style="width:100%">
+  </div>
+   <div class="mySlides fade">
+    <div class="numbertext">4 / 8</div>
+    <img src="image/dd.jpg"height="500px" style="width:100%">
+  </div>
+   <div class="mySlides fade">
+    <div class="numbertext">5 / 8</div>
+    <img src="image/ee.jpg"height="500px" style="width:100%">
+  </div>
+   <div class="mySlides fade">
+    <div class="numbertext">6 / 8</div>
+    <img src="image/ff.jpg"height="500px" style="width:100%">
+  </div>
+   <div class="mySlides fade">
+    <div class="numbertext">7 / 8</div>
+    <img src="image/gg.jpg"height="500px" style="width:100%">
+  </div>
+   <div class="mySlides fade">
+    <div class="numbertext">8 / 8</div>
+    <img src="image/hh.jpg"height="500px" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+<span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span>
+<span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDropdown");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+        } else {
+            a[i].style.display = "none";
+        }
+    }
+}
+
+
+</script>
+<div id="welcome_ncet">
+<h1><ins><center>Welcome to Ncet Hostel</center></ins></h1>
+<p style="margin-left:70px"><b>International Standard Accommodation Facilities Are Provided Separately for Boys And Girls Of the Student Community,
+Along With Residential Facilities For the Faculty.<br>
+The hostel has well equiped mess and Ultra modern kitchen which provides unmatched Hygiene and quality food.
+<b></p>
+</div>
+<div id="services">
+<h1><ins><center>Our Facilities</center></ins></h1>
+<div>
+<ul>
+<img  style src="image/8.png"height="250px"width="280px">
+<img style="margin-bottom:20px;"src="image/12.jpg"height="205px"width="205px"alt=""/>
+<img style="margin-bottom:20px;"src="image/14.png"height="205px"width="205px">
+<img src="image/16.png"height="255px"width="275px">
+<img src="image/15.jpg"height="270px"width="290px">
+</ul>
+<ul>
+<li style="margin-left:130px;"><b>Food</b></li>
+<li style="margin-left:140px;"><b>Laundry</b></li>
+<li style="margin-left:115px;"><b>Wifi</b></li>
+<li style="margin-left:130px;"><b>Room Cleaning</b></li>
+<li style="margin-left:140px;"><b>Gymnasium</b></li>
+</ul>
+</div>
+</div>
+<div id="events">
+<h2 style="margin-top:40px"><center><ins>Latest Event</ins></center></h2>
+
+<textarea style="margin-left:80px;background:green"rows="30" cols="40">
+          latest events
+		  
+*Hostel day celibration
+
+*Onam festival
+
+*Ganpati Puja
+
+*Hostel freshers
+</textarea>
+<div id="img">
+<div style="margin-left:35%;margin-top:-460px">
+
+<div class="w3-container w3-teal">
+</div>
+<a target="_blank"href="image/101.jpg">
+<img src="image/101.jpg"height="220px"width="260px">
+</a>
+<a target="_blank"href="image/106.jpg">
+<img src="image/106.jpg"height="220px"width="260px">
+</a>
+<a target="_blank"href="image/114.jpg">
+<img src="image/114.jpg"height="220px"width="260px">
+</a>
+<a target="_blank"href="image/jai.jpg">
+<img src="image/jai.jpg"height="220px"width="260px">
+</a>
+<a target="_blank"href="image/105.jpg">
+<img src="image/105.jpg"height="220px"width="260px">
+</a>
+<a target="_blank"href="image/117.jpg">
+<img src="image/108.jpg"height="220px"width="260px">
+</a>
+
+</div>
+</div>
+<div id="button">
+<center><button type="button"onclick="alert"><a style="text-decoration: none;"href="button.html">Click Here For Hostel Booking>>></a></button></center>
+</div>
+
+<div id="footer">
+<div id="office">
+<div id="frame">
+<h2 style="margin-left:30px;color:orange;"><b>Corporate Office</b></h2><br>
+ <p style="color:black;">Nagarjuna Group Of Institutions,<br>
+ <br>
+  80 Feet Road, Yalahanka New Town, Bengaluru-560 064<br><br>
+Phone no:-080 - 65653232 | 65363232<br><br>
+Mail:-info@ncetmail.com</p>
+<div id="part">
+<h2 style="margin-left:30px;color:orange;"><b>Engineering College</b></h2><br>
+<p style="color:black;"> Nagarjuna College Of Engineering & Technology<br>
+ <br>
+  Mudugurki, Venkatagiri Kote Post, Devanhalli, Bangalore- 562 <br><br>
+Phone no:-080 6746 2700,701, 702<br><br>
+Mail:-info@ncetmail.com</p>
+</div>
+</div>
+
+</div>
+
+</div>
+<div id="address">
+All materials, content and forms contained on this website are the intellectual property of<br> Nagarjuna Group Of Institutions.
+<div id="twitter">
+<a itemprop="url" href="https://twitter.com/principal_ncet" target="_blank" title=""><i class="fa fa-twitter"></i>
+<img src="image/17.png"height="70px"width="130px"></a>
+<a itemprop="url" href="https://www.facebook.com/Nagarjunacollege.Bangalore/" target="_blank" title=""><i class="fa fa-facebook"></i>
+<img src="image/30.png"height="55px"width="55px"></a>
+</div>
+</div>
+
+</body>
+</html>
